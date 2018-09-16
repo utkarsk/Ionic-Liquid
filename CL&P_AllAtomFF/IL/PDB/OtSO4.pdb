@@ -1,0 +1,45 @@
+TITLE    [OtSO4]  --  1-n-octylsulfate
+REMARK   1
+REMARK   1 Ionic liquid  CL&P force field
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5  Globular, Sponge-like to Layer-like Morphological Transition in 1-n-Alkyl-3-methylimidazolium Octylsulfate Ionic Liquid Homologous Series
+REMARK   5 J. Phys. Chem. B, 2018, 122, 2962-2974.
+
+HETATM    1  S1  OtS     1       5.505  -2.190  -0.916  1.00  0.00           S  
+HETATM    2  O2  OtS     1       4.086  -1.877  -0.837  1.00  0.00           O  
+HETATM    3  O3  OtS     1       5.603  -3.081  -2.062  1.00  0.00           O  
+HETATM    4  O4  OtS     1       5.879  -2.896   0.300  1.00  0.00           O 
+HETATM    5  O5  OtS     1       6.314  -0.803  -1.211  1.00  0.00           O 
+HETATM    6  C6  OtS     1       7.684  -1.103  -1.217  1.00  0.00           C  
+HETATM    7  C7  OtS     1       8.488   0.161  -1.523  1.00  0.00           C  
+HETATM    8  C8  OtS     1       8.157   0.725  -2.905  1.00  0.00           C
+HETATM    9  C9  OtS     1       8.983   1.979  -3.197  1.00  0.00           C
+HETATM   10  C10 OtS     1       8.654   2.542  -4.580  1.00  0.00           C
+HETATM   11  C11 OtS     1       9.479   3.796  -4.872  1.00  0.00           C
+HETATM   12  C12 OtS     1       9.150   4.359  -6.255  1.00  0.00           C
+HETATM   13  C13 OtS     1       9.972   5.613  -6.551  1.00  0.00           C
+HETATM   14  H14 OtS     1       7.915  -1.850  -1.976  1.00  0.00           H  
+HETATM   15  H15 OtS     1       7.992  -1.461  -0.235  1.00  0.00           H  
+HETATM   16  H16 OtS     1       9.549  -0.086  -1.482  1.00  0.00           H  
+HETATM   17  H17 OtS     1       8.278   0.910  -0.760  1.00  0.00           H  
+HETATM   18  H18 OtS     1       8.371  -0.030  -3.662  1.00  0.00           H  
+HETATM   19  H19 OtS     1       7.098   0.977  -2.952  1.00  0.00           H  
+HETATM   20  H20 OtS     1      10.043   1.730  -3.153  1.00  0.00           H  
+HETATM   21  H21 OtS     1       8.769   2.734  -2.441  1.00  0.00           H  
+HETATM   22  H22 OtS     1       7.594   2.791  -4.624  1.00  0.00           H  
+HETATM   23  H23 OtS     1       8.869   1.787  -5.336  1.00  0.00           H  
+HETATM   24  H24 OtS     1       9.265   4.552  -4.116  1.00  0.00           H  
+HETATM   25  H25 OtS     1      10.539   3.547  -4.828  1.00  0.00           H  
+HETATM   26  H26 OtS     1       9.365   3.609  -7.016  1.00  0.00           H  
+HETATM   27  H27 OtS     1       8.091   4.613  -6.305  1.00  0.00           H  
+HETATM   28  H28 OtS     1       9.718   5.992  -7.541  1.00  0.00           H  
+HETATM   29  H29 OtS     1       9.759   6.388  -5.816  1.00  0.00           H  
+HETATM   30  H30 OtS     1      11.037   5.382  -6.529  1.00  0.00           H  
+END

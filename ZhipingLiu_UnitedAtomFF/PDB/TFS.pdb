@@ -1,0 +1,21 @@
+TITLE    [TFS]  --  trifluoromethanesulfonate
+REMARK   1
+REMARK   1 Ionic liquid Zhiping Liu force field (United Atom)
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   6
+REMARK   6 U. Kapoor and J. K. Shah Thermophysical Properties of Imidazolium-Based Binary Ionic Liquid Mixtures Using Molecular Dynamics Simulations J. Chem. Eng. Data, 2018, 63 (7), 2512-2521
+REMARK   6
+
+
+HETATM    1  S1  TFS     1      -2.543   1.214  -0.737  1.00  0.00           S  
+HETATM    2  O2  TFS     1      -2.315  -0.462  -1.029  1.00  0.00           O  
+HETATM    3  O3  TFS     1      -3.489   1.918  -1.985  1.00  0.00           O  
+HETATM    4  O4  TFS     1      -1.029   2.013  -0.607  1.00  0.00           O  
+HETATM    5  C5  TFS     1      -3.431   1.408   0.834  1.00  0.00           C  
+END

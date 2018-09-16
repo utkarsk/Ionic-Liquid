@@ -1,0 +1,42 @@
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+;
+; minimization using steepest descent method
+;
+;
+
+integrator          = steep 
+nsteps              = 10000
+nstlog              = 10 
+nstxout             = 100
+;
+;	Energy minimizing stuff
+;
+emstep              =  0.01
+;
+; vdw cutoff
+rvdw                = 1.2
+DispCorr            = EnerPres
+rlist               = 1.2
+;
+constraints         = h-bonds
+constraint-algorithm = LINCS
+;
+; electrostatic stuff
+coulombtype = PME
+rcoulomb    = 1.2
+fourierspacing = 0.1
+pme_order = 6
+ewald_rtol = 1.E-5
+optimize_fft = yes
+;
+pbc xyz

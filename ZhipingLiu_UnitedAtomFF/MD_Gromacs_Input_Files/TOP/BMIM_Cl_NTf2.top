@@ -1,0 +1,32 @@
+; [BMIM+][Cl-][NTf2-] topology file 
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314
+;
+;
+;
+
+[ defaults ]
+;nbfunc  comb-rule   gen-pairs   fudgeLJ  fudgeQQ
+   1         2          yes        0.5      0.5
+
+;LOAD Force Field Parameters
+
+#include "/DIRECTORY_PATH/BMIM.itp"
+#include "/DIRECTORY_PATH/Cl.itp"
+#include "/DIRECTORY_PATH/NTF2.itp"
+
+[ system ]
+;name
+c4mim_cl_ntf2_5050_mix
+
+[ molecules ]
+  BMI  256
+  Cl   128
+  NTf2 128
+

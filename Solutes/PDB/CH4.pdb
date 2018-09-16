@@ -1,0 +1,14 @@
+TITLE    [CH4]  --  methane
+REMARK   1
+REMARK   1 force field based on TraPPE
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+
+
+HETATM    1 C1   Met     1       0.000   0.000   0.000  1.00  0.00           C
+END

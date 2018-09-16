@@ -1,0 +1,70 @@
+; methylsulfate anion [MeSO4]
+;
+; Ionic liquid Zhiping Liu force field (United Atom)
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+;
+; U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314
+; U. Kapoor and J. K. Shah "Thermophysical Properties of Imidazolium-Based Binary Ionic Liquid Mixtures Using Molecular Dynamics Simulations" J. Chem. Eng. Data, 2018, 63 (7), 2512-2521
+;
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  at.num   mass      charge  ptype                \sigma(nm)         \eps (kJ/mol)
+S            16          0.000        0.000       A    0.3564  1.046000
+O             8          0.000        0.000       A    0.2960  0.878640
+OS            8          0.000        0.000       A    0.3000  0.711280
+CT3           6          0.000        0.000       A    0.3750  0.794960
+
+[ moleculetype ]
+; name     nrexcl
+MeS         3
+
+[ atoms ] 
+;   nr   type  resnr residue  atom  cgnr charge  mass
+1   S      2  MeS     S1   1    0.779    32.060
+2   O      2  MeS     O2   1   -0.494    15.9994
+3   O      2  MeS     O3   1   -0.494    15.9994
+4   O      2  MeS     O4   1   -0.494    15.9994
+5   OS     2  MeS     O5   1   -0.345    15.9994
+6   CT3    2  MeS     C6   1    0.248    15.054
+;
+[ bonds ]
+; ai aj   function      r_0 (nm) k_r(kJ/nm^2)
+1    2     1    0.145    4.52792E+05   ; S-O
+1    3     1    0.145    4.52792E+05   ; S-O
+1    4     1    0.145    4.52792E+05   ; S-O
+1    5     1    0.160    2.97064E+05   ; S-OS
+5    6     1    0.174    2.31877E+05   ; CT3-OS
+
+[ angles ]
+; ai aj ak
+2 1 3   1   0.1146E+03  6.2425E+02 ; O-S-O
+2 1 4   1   0.1146E+03  6.2425E+02 ; O-S-O
+2 1 5   1   0.1056E+03  6.2425E+02 ; O-S-OS
+3 1 4   1   0.1146E+03	6.2425E+02 ; O-S-O
+3 1 5   1   0.1056E+03  6.2425E+02 ; O-S-OS
+4 1 5   1   0.1056E+03  6.2425E+02 ; O-S-OS
+1 5 6   1   0.1185E+03  7.0961E+02 ; S-OS-CT3
+
+[ dihedrals ]
+;ai aj  ak  al  type phi(degrees)  k_phi   n
+;   	    	     		  kJ/mol
+2   1   5    6   1     0.000     -0.2092  3 ; O-S-OS-CT3
+3   1   5    6   1     0.000     -0.2092  3 ; O-S-OS-CT3
+4   1   5    6   1     0.000     -0.2092  3 ; O-S-OS-CT3
+
+[ pairs ]
+; ai aj  funct
+2 6   1
+3 6   1
+4 6   1
+
+

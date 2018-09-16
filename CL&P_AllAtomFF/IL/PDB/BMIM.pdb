@@ -1,0 +1,40 @@
+TITLE    [BMIM]  --  1-butyl-3-methylimidazolium
+REMARK   1
+REMARK   1 Ionic liquid  CL&P force field
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5  Globular, Sponge-like to Layer-like Morphological Transition in 1-n-Alkyl-3-methylimidazolium Octylsulfate Ionic Liquid Homologous Series
+REMARK   5 J. Phys. Chem. B, 2018, 122, 2962-2974.
+
+HETATM    1  N1  BMI     1       1.801   4.591   1.340  1.00  0.00           N  
+HETATM    2  C2  BMI     1       0.596   5.099   1.138  1.00  0.00           C  
+HETATM    3  N3  BMI     1      -0.039   4.494   0.069  1.00  0.00           N  
+HETATM    4  C4  BMI     1       0.881   3.566  -0.387  1.00  0.00           C  
+HETATM    5  C5  BMI     1       1.983   3.624   0.376  1.00  0.00           C  
+HETATM    6  H6  BMI     1       0.023   5.665   1.872  1.00  0.00           H  
+HETATM    7  H7  BMI     1       0.721   2.904  -1.224  1.00  0.00           H  
+HETATM    8  H8  BMI     1       2.867   3.015   0.259  1.00  0.00           H  
+HETATM    9  C9  BMI     1      -1.347   4.716  -0.497  1.00  0.00           C  
+HETATM   10  C10 BMI     1       2.781   4.934   2.375  1.00  0.00           C  
+HETATM   11  C11 BMI     1       3.205   6.404   2.245  1.00  0.00           C  
+HETATM   12  C12 BMI     1       4.184   6.852   3.331  1.00  0.00           C  
+HETATM   13  C13 BMI     1       5.531   6.131   3.272  1.00  0.00           C  
+HETATM   14  H14 BMI     1      -1.869   5.502   0.049  1.00  0.00           H  
+HETATM   15  H15 BMI     1      -1.926   3.807  -0.441  1.00  0.00           H  
+HETATM   16  H16 BMI     1      -1.248   5.017  -1.540  1.00  0.00           H  
+HETATM   17  H17 BMI     1       2.336   4.763   3.355  1.00  0.00           H  
+HETATM   18  H18 BMI     1       3.653   4.288   2.274  1.00  0.00           H  
+HETATM   19  H19 BMI     1       2.316   7.029   2.328  1.00  0.00           H  
+HETATM   20  H20 BMI     1       3.647   6.572   1.263  1.00  0.00           H  
+HETATM   21  H21 BMI     1       4.370   7.918   3.198  1.00  0.00           H  
+HETATM   22  H22 BMI     1       3.736   6.706   4.314  1.00  0.00           H  
+HETATM   23  H23 BMI     1       5.418   5.063   3.458  1.00  0.00           H  
+HETATM   24  H24 BMI     1       6.190   6.535   4.040  1.00  0.00           H  
+HETATM   25  H25 BMI     1       5.998   6.283   2.298  1.00  0.00           H  
+END

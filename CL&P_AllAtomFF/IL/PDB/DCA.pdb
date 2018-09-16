@@ -1,0 +1,20 @@
+TITLE    [DCA]  --  dicyanamide
+REMARK   1
+REMARK   1 Ionic liquid  CL&P force field
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions
+REMARK   5 manuscript in preparation
+
+ATOM      1  N1  DCA     1       0.285   0.753  -0.003                       N
+ATOM      2  C2  DCA     1       0.185   0.033   1.177                       C 
+ATOM      3  C3  DCA     1       0.276   0.093  -1.222                       C 
+ATOM      4  N4  DCA     1       0.102  -0.568   2.163                       N 
+ATOM      5  N5  DCA     1       0.269  -0.457  -2.240                       N 
+END

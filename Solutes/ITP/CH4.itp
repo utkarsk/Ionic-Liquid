@@ -1,0 +1,29 @@
+; methane [CH4]
+;
+; Force field obtained from TraPPE
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture" manuscript in preparation
+; U. Kapoor, A. Banerjee, and J. K. Shah "Comparison of Four Ionic Liquid Force Fields for Calculating Phase Equilibria Properties Using Molecular Dynamics Simulations" FPE, submitted manuscript
+;
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  atomic_num  mass      charge    ptype    sigma(nm)                epsilon(KJ/mol)
+ch4    6         0.0000    0.0000    A          0.3730000                    1.230546
+
+[ moleculetype ]
+; name nrexcl
+CH4     3
+
+[ atoms ]
+; nr type resnr  residue atom cgnr charge mass
+1     ch4   1     Met    C1   1   0.0    16.0425
+

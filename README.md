@@ -145,4 +145,3 @@ Contact: utkarsh.kapoor@okstate.edu
 
 Funding: Gratitude is expressed to the National Science Foundation (NSF ACI-1339785 and NSF CBET-1706978) for funding the project.
 
-

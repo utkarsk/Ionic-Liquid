@@ -1,0 +1,30 @@
+; chloride anion [Cl]
+;
+; Ionic liquid Zhiping Liu force field (United Atom)
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+;
+; U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314
+; U. Kapoor and J. K. Shah "Thermophysical Properties of Imidazolium-Based Binary Ionic Liquid Mixtures Using Molecular Dynamics Simulations" J. Chem. Eng. Data, 2018, 63 (7), 2512-2521
+;
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  at.num   mass      charge  ptype                \sigma(nm)         \eps (kJ/mol)
+Cl           17          0.000        0.000       A    0.3742  0.627600
+
+[ moleculetype ]
+; name nrexcl
+Cl     3
+
+[ atoms ]
+; nr type resnr  residue atom cgnr charge mass
+1  Cl   1    Cl    Cl1   1   -0.8000    35.4547
+

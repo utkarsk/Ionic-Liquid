@@ -1,0 +1,76 @@
+; trifluoromethaneacetate anion [TFA]
+;
+; Ionic liquid CL&P force field (All Atom)
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions" manuscript in preparation
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  at.num   mass      charge  ptype                \sigma(nm)         \eps (kJ/mol)
+FF            9          0.000        0.000       A    0.3118  0.255200 
+O2F           8          0.000        0.000       A    0.2960  0.878600 
+COF           6          0.000        0.000       A    0.3400  0.359800 
+CTF           6          0.000        0.000       A    0.3400  0.457700 
+
+[ moleculetype ]
+;name               nrexcl    
+TFA             3         
+
+[ atoms ]
+;nr   type  resnr res   atom  cgnr         charge         mass ; qtot
+;residue 1, TFA
+1     COF    1     TFA   C1    1          0.830900    12.011000 ; qtot 0.830900
+2     O2F    1     TFA   O2    2         -0.780700    15.999000 ; qtot 0.050200
+3     O2F    1     TFA   O3    3         -0.780700    15.999000 ; qtot -0.730500
+4     CTF    1     TFA   C4    4          0.500600    12.011000 ; qtot -0.229900
+5     FF     1     TFA   F5    5         -0.256700    18.998000 ; qtot -0.486600
+6     FF     1     TFA   F6    6         -0.256700    18.998000 ; qtot -0.743300
+7     FF     1     TFA   F7    7         -0.256700    18.998000 ; qtot -1.000000
+
+[ bonds ]
+;ai     aj      funct                 r              k
+1       2       1          1.223e-01   2.32212e+05 ; C1-O2
+1       3       1          1.223e-01   2.32212e+05 ; C1-O3
+1       4       1          1.568e-01   1.08784e+05 ; C1-C4
+4       5       1          1.334e-01   1.00416e+05 ; C4-F5
+4       6       1          1.334e-01   1.00416e+05 ; C4-F6
+4       7       1          1.334e-01   1.00416e+05 ; C4-F7
+
+[ pairs ]
+;ai     aj      funct   
+2       5       1        ; O2-F5
+2       6       1        ; O2-F6
+2       7       1        ; O2-F7
+3       5       1        ; O3-F5
+3       6       1        ; O3-F6
+3       7       1        ; O3-F7
+
+[ angles ]
+;ai    aj     ak     funct            theta            cth
+1      4      5      1         1.128e+02   3.7656e+02 ; C1-C4-F5
+1      4      6      1         1.128e+02   3.7656e+02 ; C1-C4-F6
+1      4      7      1         1.128e+02   3.7656e+02 ; C1-C4-F7
+2      1      3      1         1.238e+02   4.3932e+02 ; O2-C1-O3
+2      1      4      1         1.136e+02   1.6736e+02 ; O2-C1-C4
+3      1      4      1         1.136e+02   1.6736e+02 ; O3-C1-C4
+5      4      6      1         1.060e+02   5.8576e+02 ; F5-C4-F6
+5      4      7      1         1.060e+02   5.8576e+02 ; F5-C4-F7
+6      4      7      1         1.060e+02   5.8576e+02 ; F6-C4-F7
+
+[ dihedrals ]
+;ai   aj    ak    al    funct      phi_s        k_phi  mult
+2     1     4     5     1          0.000     0.000000     0 ; O2-C1-C4-F5
+2     1     4     6     1          0.000     0.000000     0 ; O2-C1-C4-F6
+2     1     4     7     1          0.000     0.000000     0 ; O2-C1-C4-F7
+3     1     4     5     1          0.000     0.000000     0 ; O3-C1-C4-F5
+3     1     4     6     1          0.000     0.000000     0 ; O3-C1-C4-F6
+3     1     4     7     1          0.000     0.000000     0 ; O3-C1-C4-F7
+

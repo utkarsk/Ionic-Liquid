@@ -1,0 +1,62 @@
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+;
+;
+; Production run of IL in NPT ensemble (But not to be used for analysis of trajectory)
+; This is still part of equilibration
+;
+;
+; Run parameters
+integrator          = md   ; leap-frog integrator
+dt                  = 0.002    ; 2 fs
+nsteps              = 20000000  ; 40 ns
+;
+constraints           =  h-bonds
+constraint-algorithm = LINCS
+continuation         = yes 
+
+; output control
+nstxout            = 500000  
+nstvout            = 500000  
+nstfout            = 500000 
+nstenergy          = 200  
+; Neighbor searching
+nstlist            = 5   
+ns_type            = grid
+rlist              = 1.2
+rcoulomb           = 1.2
+rvdw               = 1.2
+DispCorr           = EnerPres
+; Electrostatics
+coulombtype        = PME
+pme_order          = 4
+fourierspacing     = 0.1
+; Temperature coupling 
+Tcoupl             = Nose-Hoover 
+tc_grps            = System 
+tau_t              =  0.4  ; time constant in ps
+ref_t              = 353.0
+;
+; pressure coupling
+;
+pcoupl            = Parrinello-Rahman
+pcoupltype        = isotropic
+tau_p             = 2.0 
+compressibility   = 1e-6
+ref_p             = 1.0 
+; 
+; PBC
+pbc               = xyz
+;
+nstcomm           = 1
+comm-mode         = linear
+comm-grps         = System

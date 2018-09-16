@@ -1,0 +1,15 @@
+TITLE    [CO2]  --  carbon dioxide
+REMARK   1
+REMARK   1 force field based on the works of Shi and Maginn
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+
+HETATM    1  C1  CO2     1      -0.203   0.769   0.000  1.00  0.00           C  
+HETATM    2  O2  CO2     1      -1.129   1.466  -0.000  1.00  0.00           O  
+HETATM    3  O3  CO2     1       0.724   0.071   0.000  1.00  0.00           O  
+END

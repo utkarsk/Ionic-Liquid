@@ -1,0 +1,28 @@
+TITLE    [MeSO4]  --  methylsulfate
+REMARK   1 Atom connectivity information is required for CASSANDRA
+REMARK   1 Ionic liquid  Zhiping Liu  force field (United Atom)
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture
+REMARK   5 manuscript in preparation
+
+
+HETATM       1       S       -2.145557     2.553952     -2.439071     S       S
+HETATM       2       O       -1.303444     3.531127     -1.776895     O       O
+HETATM       3       O       -2.797844     3.082938     -3.621101     O       O
+HETATM       4       O       -1.486458     1.277161     -2.633733     O       O
+HETATM       5       O       -3.320061     2.276149     -1.388659     O       OS
+HETATM       6       C       -2.896344     1.698283     0.196942      C       CH3
+CONECT     1    3   2   4   5   
+CONECT     2    1   
+CONECT     3    1   
+CONECT     4    1   
+CONECT     5    1   6   
+CONECT     6    5  
+END 

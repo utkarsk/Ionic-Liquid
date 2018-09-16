@@ -1,0 +1,73 @@
+! carbon dioxide [CO2]
+!
+! Force field obtained from the works of Shi and Maginn
+!
+! Kapoor, Utkarsh
+!
+! Email: utkarsh.kapoor@okstate.edu
+!
+! Other Contributor: Jindal K. Shah
+!
+! U. Kapoor and J. K. Shah "Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture" manuscript in preparation
+!
+!
+
+!*******************************************************************************
+!Molecular connectivity file for co2.pdb
+!*******************************************************************************
+!Atom Format
+!index type element mass charge vdw_type parameters
+!vdw_type="LJ", parms=epsilon sigma
+!vdw_type="Mie", parms=epsilon sigma repulsion_exponent dispersion_exponent
+
+# Atom_Info
+3
+1    C1_s4    C    12.01    0.70    LJ    27.001    2.800
+2    O2_s4    O    15.994    -0.35    LJ    79.004    3.050
+3    O3_s4    O    15.994    -0.35    LJ    79.004    3.050
+
+!Bond Format
+!index i j type parameters
+!type="fixed", parms=bondLength
+
+# Bond_Info
+2
+1     1     2     fixed     1.160
+2     1     3     fixed     1.160
+
+!Angle Format
+!index i j k type parameters
+!type="fixed", parms=equilibrium_angle
+!type="harmonic", parms=force_constant equilibrium_angle
+
+# Angle_Info
+1
+1     2     1     3     harmonic   28181.9    180.00
+
+# Dihedral_Info
+0
+
+# Improper_Info
+0
+
+!Intra Scaling
+!vdw_scaling    1-2 1-3 1-4 1-N
+!charge_scaling 1-2 1-3 1-4 1-N
+
+# Intra_Scaling
+0. 0. 0.0000 1.
+0. 0. 0.0000 1.
+
+!Fragment Format
+!index number_of_atoms_in_fragment branch_point other_atoms
+
+# Fragment_Info
+1
+1    3    1    2    3
+
+
+# Fragment_Connectivity
+0
+
+
+END

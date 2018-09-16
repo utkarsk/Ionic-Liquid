@@ -1,0 +1,41 @@
+TITLE    [C8H18]  --  n-octane
+REMARK   1
+REMARK   1 Cl&P force field
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Effect of Molecular Solvents of Varying Polarity on the Self-Assembly of 1-n-Dodecyl-3- methylimidazolium Octylsulfate Ionic Liquid
+REMARK   5 J. Theor. Comput. Chem. 2018, 17, 1840004-1-1840004-26
+
+ATOM      1  C1  OCH     1       2.675   2.594  -0.006  1.00  0.00           C  
+ATOM      2  C2  OCH     1       1.465   1.666  -0.079  1.00  0.00           C  
+ATOM      3  C3  OCH     1       0.155   2.456   0.019  1.00  0.00           C  
+ATOM      4  C4  OCH     1      -1.057   1.520  -0.055  1.00  0.00           C  
+ATOM      5  C5  OCH     1      -2.369   2.310   0.043  1.00  0.00           C  
+ATOM      6  C6  OCH     1      -3.581   1.374  -0.030  1.00  0.00           C  
+ATOM      7  C7  OCH     1      -4.891   2.164   0.068  1.00  0.00           C  
+ATOM      8  C8  OCH     1      -6.101   1.236  -0.005  1.00  0.00           C  
+ATOM      9  H9  OCH     1      -6.079   0.507   0.833  1.00  0.00           H  
+ATOM     10  H10 OCH     1      -6.106   0.684  -0.969  1.00  0.00           H  
+ATOM     11  H11 OCH     1      -7.033   1.834   0.068  1.00  0.00           H  
+ATOM     12  H12 OCH     1      -4.922   2.719   1.031  1.00  0.00           H  
+ATOM     13  H13 OCH     1      -4.950   2.895  -0.768  1.00  0.00           H  
+ATOM     14  H14 OCH     1      -3.558   0.819  -0.994  1.00  0.00           H  
+ATOM     15  H15 OCH     1      -3.531   0.642   0.806  1.00  0.00           H  
+ATOM     16  H16 OCH     1      -2.391   2.865   1.007  1.00  0.00           H  
+ATOM     17  H17 OCH     1      -2.419   3.042  -0.793  1.00  0.00           H  
+ATOM     18  H18 OCH     1      -1.035   0.965  -1.018  1.00  0.00           H  
+ATOM     19  H19 OCH     1      -1.007   0.788   0.782  1.00  0.00           H  
+ATOM     20  H20 OCH     1       0.132   3.011   0.982  1.00  0.00           H  
+ATOM     21  H21 OCH     1       0.105   3.188  -0.817  1.00  0.00           H  
+ATOM     22  H22 OCH     1       1.496   1.111  -1.042  1.00  0.00           H  
+ATOM     23  H23 OCH     1       1.524   0.935   0.756  1.00  0.00           H  
+ATOM     24  H24 OCH     1       2.653   3.323  -0.844  1.00  0.00           H  
+ATOM     25  H25 OCH     1       3.607   1.996  -0.079  1.00  0.00           H  
+ATOM     26  H26 OCH     1       2.680   3.146   0.958  1.00  0.00           H  
+END

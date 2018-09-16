@@ -1,0 +1,23 @@
+TITLE    [TFS]  --  trifluoromethanesulfonate
+REMARK   1
+REMARK   1 Ionic liquid  CL&P force field
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions
+REMARK   5 manuscript in preparation
+
+HETATM    1  S1  TFS     1      -1.480   1.226  -0.051  1.00  0.00           S  
+HETATM    2  O2  TFS     1      -0.960   2.472  -0.782  1.00  0.00           O  
+HETATM    3  O3  TFS     1      -0.742   1.281   1.295  1.00  0.00           O  
+HETATM    4  O4  TFS     1      -0.776   0.074  -0.784  1.00  0.00           O  
+HETATM    5  C5  TFS     1      -3.289   1.086   0.059  1.00  0.00           C  
+HETATM    6  F6  TFS     1      -3.876   2.179  -0.550  1.00  0.00           F  
+HETATM    7  F7  TFS     1      -3.671   1.043   1.387  1.00  0.00           F  
+HETATM    8  F8  TFS     1      -3.705  -0.069  -0.575  1.00  0.00           F  
+END

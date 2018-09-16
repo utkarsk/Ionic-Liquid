@@ -1,0 +1,92 @@
+; bis(trifluoromethanesulfonyl)imide anion [NTF2]
+;
+; Ionic liquid Zhiping Liu force field (United Atom)
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+;
+; U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314
+; U. Kapoor and J. K. Shah "Thermophysical Properties of Imidazolium-Based Binary Ionic Liquid Mixtures Using Molecular Dynamics Simulations" J. Chem. Eng. Data, 2018, 63 (7), 2512-2521
+;
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  at.num   mass      charge  ptype                \sigma(nm)         \eps (kJ/mol)
+CF3           6          0.000        0.000       A    0.4472  0.669440
+ONTf2         8          0.000        0.000       A    0.2960  0.878640
+SNTf2        16          0.000        0.000       A    0.3564  1.046000
+NNTf2         7          0.000        0.000       A    0.3250  0.711280
+
+[ moleculetype ]
+; name     nrexcl
+NTf2        3
+
+[ atoms ] 
+;   nr   type  resnr residue  atom  cgnr charge  mass
+1   CF3	   2  NTf2    C1   1   -0.095    69.006
+2   SNTf2  2  NTf2    S2   1    0.627    32.065
+3   ONTf2  2  NTf2    O3   1   -0.398    15.994  
+4   ONTf2  2  NTf2    O4   1   -0.398    15.994  
+5   NNTf2  2  NTf2    N5   1   -0.272    14.0067
+6   SNTf2  2  NTf2    S6   1    0.627    32.065
+7   ONTf2  2  NTf2    O7   1   -0.398    15.994  
+8   ONTf2  2  NTf2    O8   1   -0.398    15.994  
+9   CF3	   2  NTf2    C9   1   -0.095    69.006
+;
+[ bonds ]
+; ai aj   function      r_0 (nm) k_r(kJ/nm^2)
+1    2     1    0.240	 1.31629E+05   ; CF3-S
+2    3     1    0.145    4.52792E+05   ; S-O
+2    4     1    0.145    4.52792E+05   ; S-O
+2    5     1    0.157    2.26605E+05   ; S-N
+6    5     1    0.157    2.26605E+05   ; S-N
+6    7     1    0.145    4.52792E+05   ; S-O
+6    8     1    0.145    4.52792E+05   ; S-O
+9    6     1    0.240	 1.31629E+05   ; CF3-S
+
+[ angles ]
+; ai aj ak
+1 2 3   1   0.1032E+03  6.4015E+02 ; CF3-S-O
+1 2 4   1   0.1032E+03  6.4015E+02 ; CF3-S-O
+1 2 5   1   0.1059E+03  6.6024E+02 ; CF3-S-N
+3 2 4   1   0.1146E+03  6.2425E+02 ; O-S-O
+3 2 5   1   0.1127E+03  5.8743E+02 ; O-S-N
+4 2 5   1   0.1127E+03  5.8743E+02 ; O-S-N
+2 5 6   1   0.1252E+03  5.1212E+02 ; S-N-S
+9 6 7   1   0.1032E+03  6.4015E+02 ; CF3-S-O
+9 6 8   1   0.1032E+03  6.4015E+02 ; CF3-S-O
+9 6 5   1   0.1059E+03  6.6024E+02 ; CF3-S-N
+7 6 8   1   0.1146E+03  6.2425E+02 ; O-S-O
+7 6 5   1   0.1127E+03  5.8743E+02 ; O-S-N
+8 6 5   1   0.1127E+03  5.8743E+02 ; O-S-N
+
+
+[ dihedrals ]
+;ai aj  ak  al  type phi(degrees)  k_phi   n
+;   	    	     		  kJ/mol
+1   2   5    6   1     0.000      3.832544 1 ; CF3-S-N-S
+1   2   5    6   1   180.000     -4.372280 2 ; CF3-S-N-S
+1   2   5    6   1     0.000     -1.598288 3 ; CF3-S-N-S
+3   2   5    6   1     0.000      3.347200 3 ; O-S-N-S
+4   2   5    6   1     0.000      3.347200 3 ; O-S-N-S
+9   6   5    2   1     0.000      3.832544 1 ; CF3-S-N-S
+9   6   5    2   1   180.000     -4.372280 2 ; CF3-S-N-S
+9   6   5    2   1     0.000     -1.598288 3 ; CF3-S-N-S
+7   6   5    2   1     0.000      3.347200 3 ; O-S-N-S
+8   6   5    2   1     0.000      3.347200 3 ; O-S-N-S
+
+[ pairs ]
+; ai aj  funct
+1 6   1
+3 6   1
+4 6   1
+9 2   1
+7 2   1
+8 2   1
+

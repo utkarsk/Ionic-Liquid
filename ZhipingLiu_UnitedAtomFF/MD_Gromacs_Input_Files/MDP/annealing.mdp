@@ -1,0 +1,68 @@
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+;
+;
+; Periodic annealing of the IL (Shown for [BMI+][Cl-][NTf2-] IL mixture)
+;
+; the cation and anion temperatures will go linearly at the rate of 1K/ps from 0 to 353 ps.
+; This will be followed by heating of the system to 553 K lineary in the next 200 ps.
+; NVT simulations at 553 K for 100 ps
+; Cooling from 553 K to 353 K in the next 200 ps
+; Heating the system from 353 K to 553 K in next 200 ps
+; Hold the system at 553 K for 100 ps
+; Cool down of the system from 553 K to 353 K in 200 ps and system stays at this temperature for another 500 ps
+;
+
+; Run parameters
+integrator          = md   ; leap-frog integrator
+dt                  = 0.002    ; 2 fs
+nsteps              = 1000000  ; 2 ns
+;
+constraints         =  h-bonds
+constraint-algorithm = LINCS 
+; output control
+nstxout            = 10000  
+nstvout            = 10000
+nstfout            = 10000
+nstenergy          = 1000
+; Neighbor searching
+nstlist            = 10    
+ns_type            = grid
+rlist              = 1.2
+rcoulomb           = 1.2
+rvdw               = 1.2
+DispCorr           = EnerPres
+; Electrostatics
+coulombtype        = PME
+pme_order          = 4
+fourierspacing     = 0.1
+; Temperature coupling 
+Tcoupl             = v-rescale 
+tc_grps            = BMI Cl NTf2
+tau_t              = 0.4 0.4 0.4 ; time constant in ps
+ref_t              = 353.0 353.0 353.0
+ld-seed            = 502150803
+; 
+;
+annealing = single single single
+annealing_npoints = 9 9 9
+annealing_time = 0 353 500 700 800 1000 1200 1300 1500 0 353 500 700 800 1000 1200 1300 1500 0 353 500 700 800 1000 1200 1300 1500
+annealing_temp = 0 353 353 553 553 353  553  553 353  0 353 353 553 553 353  553  553 353 0 353 353 553 553 353  553  553 353
+; generate velocity of
+;gen_vel           = yes 
+; PBC
+pbc               = xyz
+;
+nstcomm           = 1
+comm-mode         = linear
+comm-grps         = BMI Cl NTf2
+

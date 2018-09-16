@@ -1,0 +1,19 @@
+TITLE    [H2O]  --  water
+REMARK   1
+REMARK   1 SPC/E force field model
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Effect of Molecular Solvents of Varying Polarity on the Self-Assembly of 1-n-Dodecyl-3- methylimidazolium Octylsulfate Ionic Liquid
+REMARK   5 J. Theor. Comput. Chem. 2018, 17, 1840004-1-1840004-26
+
+
+HETATM    1  O1  H2O     1      -1.201   0.855   0.024  1.00  0.00           O
+HETATM    2  H2  H2O     1      -0.212   0.844  -0.017  1.00  0.00           H  
+HETATM    3  H3  H2O     1      -1.490   0.609  -0.890  1.00  0.00           H 
+END

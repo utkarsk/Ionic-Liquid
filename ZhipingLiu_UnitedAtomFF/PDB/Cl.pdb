@@ -1,0 +1,17 @@
+TITLE    [Cl]  --  chloride
+REMARK   1
+REMARK   1 Ionic liquid Zhiping Liu force field (United Atom)
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314
+REMARK   6
+REMARK   6 U. Kapoor and J. K. Shah Thermophysical Properties of Imidazolium-Based Binary Ionic Liquid Mixtures Using Molecular Dynamics Simulations J. Chem. Eng. Data, 2018, 63 (7), 2512-2521
+REMARK   6
+
+HETATM    1 Cl1  Cl      1       0.000   0.000   0.000  1.00  0.00           Cl
+END

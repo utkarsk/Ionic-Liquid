@@ -1,0 +1,193 @@
+!
+! Kapoor, Utkarsh
+!
+! Email: utkarsh.kapoor@okstate.edu
+!
+! Other Contributor: Jindal K. Shah
+!
+! U. Kapoor and J. K. Shah "Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture" manuscript in preparation
+!
+!
+
+! This is the input file for a simulation of [C4mim]Cl_x[NTf2]_{1-x}+CO2 with x = 0.5
+
+# Run_Name
+prod_solubility_5050_co2
+!-------------------------------All output files will be created by this name
+
+# Sim_Type
+gemc_npt
+!-------------------------------This is type of simulation.
+
+# Nbr_Species
+4
+!-------------------------------Total number of species: 3 for IL + CO2
+
+# VDW_Style
+LJ   cut_tail   12.0
+LJ   cut_tail   30.0
+!------------------------------- LJ cut-off
+
+# Mixing_Rule
+LB
+!------------------------------ LJ interaction parameters
+
+# Charge_Style
+coul Ewald 12.0 1E-5
+coul Ewald 30.0 1E-5
+!-------------------- coulombic cut-off with maximum precision
+
+# Intra_Scaling
+0.0 0.0 0.5 1.0
+0.0 0.0 0.5 1.0
+0.0 0.0 0.5 1.0
+0.0 0.0 0.5 1.0
+0.0 0.0 0.5 1.0
+0.0 0.0 0.5 1.0
+0.0 0.0 0.5 1.0
+0.0 0.0 0.5 1.0
+!---------------- scaling of 1-4 interactions
+
+# Rcutoff_Low
+1.0
+!-------------------------- Tolerance
+
+# Molecule_Files
+BMIM.mcf 256
+NTF2.mcf 128
+Cl.mcf   128
+CO2.mcf  500
+!-------------------- Total number of molecules of each species
+!----------------------------------------------------------one line per species
+
+# Box_Info
+2
+cubic
+46.0
+
+cubic
+100.0
+!-------------------------------------------------------line 1: number of boxes
+!--------------------------------------------------------------line 2: box type (liquid)
+!--------------------------------------------------------------line 3: box size (gas)
+!--------------------------------------------------------------repeat for second box
+
+# Temperature_Info
+353.0
+353.0
+!----------------------------------------------------------one temperature per box
+
+# Pressure_Info
+1.0
+1.0
+!------------------------ Pressure at which absorption isotherm is predicted
+
+# Move_Probability_Info
+
+# Prob_Translation 
+0.30
+0.5 0.5 0.5 0.5
+0.0 0.0 0.0 12.0
+!---------------------Thermal move
+!--------------------- Probability
+!--------------------- Maximum translation (Automatic optimization during simulation)
+
+# Prob_Rotation
+0.30
+60.0 60.0 30.0 30.0
+0.0 0.0 0.0 180.0
+!---------------------Thermal move
+!--------------------- Probability
+!--------------------- Maximum translation (Automatic optimization during simulation)
+
+# Prob_Regrowth
+0.30
+0.45 0.45 0.05 0.05
+!---------------------Thermal move
+!--------------------- Probability
+!--------------------- Maximum translation (Automatic optimization during simulation)
+
+# Prob_Volume
+0.005
+200.0
+200.0 
+!---------------------Volume move (equality of pressure) - both box volumes vary independently
+!--------------------- Probability
+!--------------------- Maximum Volume Change (Automatic optimization during simulation)
+
+# Prob_Swap
+0.095
+none none none cbmc
+!---------------------Insertion/deletion move (equality of chemical potential)
+!--------------------- Probability
+!--------------------- species that can move from one box to another. IL cannot, no vapor pressure.
+
+# Done_Probability_Info
+!---------------------one line for each box and one entry/line for each species
+!-----------------------------------------each molecule moves per volume change
+
+# Start_Type
+checkpoint equi_solubility_5050_co2.chk
+!----------------------------------------------------------checkpoint: filename (Start from this checkpoint)
+
+# Run_Type
+production 1000 50
+!-------------------------Equilibration: update maximum widths every 1000 steps/update maximum
+!-------------------------volume displacement every 50 steps
+
+
+# Simulation_Length_Info
+units       steps
+prop_freq   500
+coord_freq  50000
+run         50000000
+!------------------ Since starting from checkpoint - run should be greater than what is present in equilibration
+!---------------------------------------This is only 25 million Monte Carlo Production steps and not 50 million
+
+# Seed
+625182111 625182112
+!--------------------------------------- Seeds for Random number generator
+
+# Property_Info 1
+Energy_Total
+Density
+Nmols
+Volume
+Pressure
+!-------------------------------------- Properties of interest
+
+# Property_Info 2
+Energy_Total
+Density
+Nmols
+Volume
+Pressure
+!-------------------------------------- Properties of interest
+
+# CBMC_Info
+kappa_ins 12
+kappa_dih 12
+rcut_cbmc 6.5  6.5
+!------------------------------------------------------------------------------
+
+# Pair_Energy
+TRUE
+!------------------------------------------------------------------------------
+
+# Verbose Logfile
+TRUE
+!------------------------------------------------------------------------------
+
+# Fragment_Files
+species1/frag1/frag1.dat  1
+species1/frag2/frag2.dat  2
+species1/frag3/frag3.dat  3
+species1/frag4/frag4.dat  4
+species2/frag1/frag1.dat  5
+species2/frag2/frag2.dat  6
+species2/frag3/frag3.dat  7
+species3/frag1/frag1.dat  8
+species4/frag1/frag1.dat  9
+!---------------------------------------------------------one line per fragment
+
+END

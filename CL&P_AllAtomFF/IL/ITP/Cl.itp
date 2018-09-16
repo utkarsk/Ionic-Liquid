@@ -1,0 +1,28 @@
+; chloride anion [Cl]
+;
+; Ionic liquid CL&P force field (All Atom)
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions" manuscript in preparation
+;
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  at.num   mass      charge  ptype                \sigma(nm)         \eps (kJ/mol)
+Cl           17          0.000        0.000       A    0.3650      0.830000
+
+[ moleculetype ]
+; name nrexcl
+Cl     3
+
+[ atoms ]
+; nr type resnr  residue atom cgnr charge mass
+1  Cl   1    Cl    Cl1   1   -1.0000    35.453
+

@@ -1,0 +1,20 @@
+TITLE    [OAC]  --  acetate
+REMARK   1
+REMARK   1 Ionic liquid Zhiping Liu force field (United Atom)
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   6
+REMARK   6 U. Kapoor and J. K. Shah Thermophysical Properties of Imidazolium-Based Binary Ionic Liquid Mixtures Using Molecular Dynamics Simulations J. Chem. Eng. Data, 2018, 63 (7), 2512-2521
+REMARK   6
+
+
+HETATM    1  C1  OAC     1      -2.452   0.961   0.000  1.00  0.00           C  
+HETATM    2  O2  OAC     1      -2.435   2.180   0.000  1.00  0.00           O  
+HETATM    3  O3  OAC     1      -1.296   0.272   0.000  1.00  0.00           O  
+HETATM    4  C4  OAC     1      -3.751   0.234   0.000  1.00  0.00           C  
+END

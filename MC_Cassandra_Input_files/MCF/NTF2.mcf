@@ -1,0 +1,85 @@
+! bis(trifluoromethanesulfonyl)imide anion [NTF2]
+!
+! Ionic liquid Zhiping Liu force field (United Atom)
+!
+! Kapoor, Utkarsh
+!
+! Email: utkarsh.kapoor@okstate.edu
+!
+! Other Contributor: Jindal K. Shah
+!
+! U. Kapoor and J. K. Shah "Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture" manuscript in preparation
+!
+!
+!**********************************************************************************
+!Molecular connectivity file for NTF2.pdb
+!**********************************************************************************
+
+# Atom_Info
+9
+1    CNTf2_s2    C    69.006    -0.095    LJ    80.5151    4.472
+2    SNTf2_s2    S    32.065    0.627    LJ    125.805    3.564
+3    ONTF2_s2    O    15.994    -0.398    LJ    105.6761    2.960
+4    ONTf2_s2    O    15.994    -0.398    LJ    105.6761    2.960
+5    NNTf2_s2    N    14.0067    -0.272    LJ    85.5473    3.250
+6    SNTf2_s2    S    32.065    0.627    LJ    125.805    3.564
+7    ONTf2_s2    O    15.994    -0.398    LJ    105.6761    2.960
+8    ONTf2_s2    O    15.994    -0.398    LJ    105.6761    2.960
+9    CNTf2_s2    C    69.006    -0.095    LJ    80.5151    4.472
+
+# Bond_Info
+8
+1    1    2    fixed     2.40
+2    2    5    fixed     1.57
+3    2    3    fixed     1.45
+4    2    4    fixed     1.45
+5    5    6    fixed     1.57
+6    6    9    fixed     2.40
+7    6    7    fixed     1.45
+8    6    8    fixed     1.45
+
+# Angle_Info
+13
+1    5    2    3    harmonic     35326.014    112.7
+2    5    2    4    harmonic     35326.014    112.7
+3    5    2    1    harmonic     39704.024    105.9
+4    3    2    4    harmonic     37540.180    114.6
+5    3    2    1    harmonic     38496.297    103.2
+6    4    2    1    harmonic     38496.297    103.2
+7    6    5    2    harmonic     30797.038    125.2
+8    9    6    7    harmonic     38496.297    103.2
+9    9    6    8    harmonic     38496.297    103.2
+10    9    6    5    harmonic     39704.024    105.9
+11    7    6    8    harmonic     37540.180    114.6
+12    7    6    5    harmonic     35326.014    112.7
+13    8    6    5    harmonic     35326.014    112.7
+
+# Dihedral_Info
+10
+1    1    2    5    6    CHARMM     3.8325     1     0
+2    1    2    5    6    CHARMM    -4.3723     2   180
+3    1    2    5    6    CHARMM    -1.5983     3     0
+4    2    5    6    9    CHARMM     3.8325     1     0
+5    2    5    6    9    CHARMM    -4.3723     2   180
+6    2    5    6    9    CHARMM    -1.5983     3     0
+7    2    5    6    7    CHARMM     3.3472     3     0
+8    2    5    6    8    CHARMM     3.3472     3     0
+9    3    2    5    6    CHARMM     3.3472     3     0
+10    4    2    5    6    CHARMM     3.3472     3     0
+
+# Fragment_Info
+3
+1    5    2    5    3    4    1
+2    3    5    6    2
+3    5    6    9    7    8    5
+
+# Improper_Info
+0
+
+# Fragment_Connectivity
+2
+1    1    2
+2    2    3
+
+
+END

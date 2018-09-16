@@ -1,0 +1,42 @@
+! chloride anion [Cl]
+!
+! Ionic liquid Zhiping Liu force field (United Atom)
+!
+! Kapoor, Utkarsh
+!
+! Email: utkarsh.kapoor@okstate.edu
+!
+! Other Contributor: Jindal K. Shah
+!
+! U. Kapoor and J. K. Shah "Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture" manuscript in preparation
+!
+!
+!**********************************************************************************
+!Molecular connectivity file for chlorine.pdb
+!**********************************************************************************
+
+# Atom_Info
+1
+1    Cl1_s3    Cl    35.4547    -0.8    LJ    75.483    3.742
+
+# Bond_Info
+0
+
+# Angle_Info
+0
+
+# Dihedral_Info
+0
+
+# Fragment_Info
+1
+1    1    1
+
+# Improper_Info
+0
+
+# Fragment_Connectivity
+0
+
+END
+

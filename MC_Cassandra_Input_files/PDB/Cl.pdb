@@ -1,0 +1,16 @@
+TITLE    [Cl]  --  chloride
+REMARK   1 Atom connectivity information is required for CASSANDRA
+REMARK   1 Ionic liquid  Zhiping Liu  force field (United Atom)
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture
+REMARK   5 manuscript in preparation
+
+HETATM       1       Cl       0.000000     0.000000     0.000000     Cl       Cl
+END

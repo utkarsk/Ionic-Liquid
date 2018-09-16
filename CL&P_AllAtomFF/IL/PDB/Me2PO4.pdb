@@ -1,0 +1,28 @@
+TITLE    [Me2PO4]  --  dimethylphosphate
+REMARK   1
+REMARK   1 Ionic liquid OPLS-AA force field and not CL&P FF. But works well with CL&P FF.
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions
+REMARK   5 manuscript in preparation
+
+HETATM    1  P1  DMP     1     -10.280   0.338  -1.079  1.00  0.00           P  
+HETATM    2  O2  DMP     1     -11.770   0.212  -1.966  1.00  0.00           O  
+HETATM    3  O3  DMP     1     -10.173   1.785  -0.126  1.00  0.00           O  
+HETATM    4  O4  DMP     1      -9.688   1.268  -2.449  1.00  0.00           O  
+HETATM    5  O5  DMP     1      -8.941  -0.200  -0.083  1.00  0.00           O  
+HETATM    6  C6  DMP     1      -7.934  -0.728  -0.901  1.00  0.00           C  
+HETATM    7  C7  DMP     1      -9.384   0.412  -3.530  1.00  0.00           C
+HETATM    8  H8  DMP     1      -8.328  -1.492  -1.607  1.00  0.00           H  
+HETATM    9  H9  DMP     1      -7.387   0.091  -1.412  1.00  0.00           H  
+HETATM   10  H10 DMP     1      -7.201  -1.251  -0.253  1.00  0.00           H  
+HETATM   11  H11 DMP     1      -9.594   0.958  -4.472  1.00  0.00           H  
+HETATM   12  H12 DMP     1     -10.003  -0.511  -3.569  1.00  0.00           H  
+HETATM   13  H13 DMP     1      -8.308   0.148  -3.528  1.00  0.00           H  
+END

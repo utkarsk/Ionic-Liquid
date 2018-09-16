@@ -1,0 +1,30 @@
+TITLE    [HMIM]  --  1-hexyl-3-methylimidazolium
+REMARK   1
+REMARK   1 Ionic liquid Zhiping Liu force field (United Atom)
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   6
+REMARK   6 U. Kapoor and J. K. Shah Thermophysical Properties of Imidazolium-Based Binary Ionic Liquid Mixtures Using Molecular Dynamics Simulations J. Chem. Eng. Data, 2018, 63 (7), 2512-2521
+REMARK   6
+
+HETATM    1  N1  HMI     1      -1.514   1.746   0.004  1.00  0.00           N  
+HETATM    2  C2  HMI     1      -2.590   2.551   0.004  1.00  0.00           C  
+HETATM    3  N3  HMI     1      -3.870   1.771   0.003  1.00  0.00           N  
+HETATM    4  C4  HMI     1      -3.437   0.298   0.004  1.00  0.00           C  
+HETATM    5  C5  HMI     1      -1.902   0.298   0.004  1.00  0.00           C  
+HETATM    6  H6  HMI     1      -2.539   3.620   0.004  1.00  0.00           H  
+HETATM    7  H7  HMI     1      -4.078  -0.559   0.005  1.00  0.00           H  
+HETATM    8  H8  HMI     1      -1.250  -0.551   0.004  1.00  0.00           H  
+HETATM    9  C9  HMI     1      -5.241   2.301   0.001  1.00  0.00           C  
+HETATM   10  C10 HMI     1      -0.125   2.227   0.004  1.00  0.00           C  
+HETATM   11  C11 HMI     1       0.360   2.396  -1.448  1.00  0.00           C  
+HETATM   12  C12 HMI     1      -0.016   3.801  -1.954  1.00  0.00           C  
+HETATM   13  C13 HMI     1       1.178   4.410  -2.712  1.00  0.00           C  
+HETATM   14  C14 HMI     1       0.876   5.988  -2.611  1.00  0.00           C  
+HETATM   15  C15 HMI     1       1.994   6.681  -3.539  1.00  0.00           C  
+END

@@ -1,0 +1,42 @@
+TITLE    [BMIM]  --  1-butyl-3-methylimidazolium
+REMARK   1 Atom connectivity information is required for CASSANDRA
+REMARK   1 Ionic liquid  Zhiping Liu  force field (United Atom)
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah 
+REMARK   5 Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture 
+REMARK   5 manuscript in preparation
+
+
+HETATM    1  N                   1.801   4.591   1.340                       N	NA  
+HETATM    2  C                   0.596   5.099   1.138                       C	CR  
+HETATM    3  N                  -0.039   4.494   0.069                       N	NA  
+HETATM    4  C                   0.881   3.566  -0.387                       C	CW  
+HETATM    5  C                   1.983   3.624   0.376                       C	CW  
+HETATM    6  H                   0.023   5.665   1.872                       H	H5  
+HETATM    7  H                   0.721   2.904  -1.224                       H	H4  
+HETATM    8  H                   2.867   3.015   0.259                       H	H4  
+HETATM    9  C                  -1.347   4.716  -0.497                       C	CN3  
+HETATM   10  C                   2.781   4.934   2.375                       C	CN2  
+HETATM   11  C                   3.205   6.404   2.245                       C	CT2  
+HETATM   12  C                   4.184   6.852   3.331                       C	CT2  
+HETATM   13  C                   5.531   6.131   3.272                       C	CT3  
+CONECT    1    5    2   10                                            
+CONECT    2    3    1    6                                            
+CONECT    3    9    4    2                                            
+CONECT    4    7    3    5                                            
+CONECT    5    4    8    1                                            
+CONECT    6    2                                                      
+CONECT    7    4                                                      
+CONECT    8    5                                                      
+CONECT    9    3                                                      
+CONECT   10    1   11                                                 
+CONECT   11   10   12                                                 
+CONECT   12   11   13                                                 
+CONECT   13   12                                                      
+END

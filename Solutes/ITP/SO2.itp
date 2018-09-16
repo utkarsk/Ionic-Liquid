@@ -1,0 +1,47 @@
+; sulfur dioxide [SO2]
+;
+; Force field obtained from the works of Shi and Maginn
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor, A. Banerjee, and J. K. Shah "Comparison of Four Ionic Liquid Force Fields for Calculating Phase Equilibria Properties Using Molecular Dynamics Simulations" FPE, submitted manuscript
+;
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  atomic_num  mass      charge    ptype    sigma(nm) (R_min/2^(1/6))   epsilon(KJ/mol)
+SSO2   16         0.0000    0.0000    A          0.339000                    0.6136101
+OSO2    8         0.0000    0.0000    A          0.305000                    0.6568455
+
+[ moleculetype ]
+;name               nrexcl    
+SO2                 3         
+
+[ atoms ]
+;nr   type  resnr res   atom  cgnr         charge         mass ; qtot
+;residue 1, CO2
+1     SSO2  1     SO2   S1    1          0.5900    32.066000 ; qtot 0.700000
+2     OSO2  1     SO2   O2    2         -0.2950    15.999400 ; qtot 0.350000
+3     OSO2  1     SO2   O3    3         -0.2950    15.999400 ; qtot 0.000000
+
+[ bonds ]
+;ai     aj      funct                 r              k
+1       2       1          1.432000e-01   6.359680e+05 ; S1-O2
+1       3       1          1.432000e-01   6.359680e+05 ; S1-O3
+
+[ distance_restraints ]
+;  ai    aj type index type' low up1 up2 fac
+   1     2     1     0      1   0.0  0.30  0.40  1.0
+   1     3     1     0      1   0.0  0.30  0.40  1.0
+
+[ angles ]
+;ai    aj     ak     funct            theta            cth
+2      1      3      1         1.1930000e+02   4.6027e+02 ; O2-S1-O3
+
+

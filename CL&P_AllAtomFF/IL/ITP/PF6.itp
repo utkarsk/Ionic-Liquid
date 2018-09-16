@@ -1,0 +1,63 @@
+; hexafluorophosphate anion [PF6]
+;
+; Ionic liquid CL&P force field (All Atom)
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions" manuscript in preparation
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  at.num   mass      charge  ptype                \sigma(nm)         \eps (kJ/mol)
+PPF6         15          0.000        0.000       A    0.3740  0.836800 
+FPF6          9          0.000        0.000       A    0.3120  0.255200 
+
+[ moleculetype ]
+;name               nrexcl    
+PF6                 3         
+
+[ atoms ]
+;nr   type  resnr res   atom  cgnr         charge         mass ; qtot
+;residue 1, PF6
+1     PPF6     1     PF6   P1    1          1.340000    30.974000 ; qtot 0.228000
+2     FPF6     1     PF6   F2    2         -0.390000    18.998000 ; qtot -0.079000
+3     FPF6     1     PF6   F3    3         -0.390000    18.998000 ; qtot -0.386000
+4     FPF6     1     PF6   F4    4         -0.390000    18.998000 ; qtot -0.693000
+5     FPF6     1     PF6   F5    5         -0.390000    18.998000 ; qtot -1.000000
+6     FPF6     1     PF6   F6    6         -0.390000    18.998000 ; qtot -1.000000
+7     FPF6     1     PF6   F7    7         -0.390000    18.998000 ; qtot -1.000000
+
+
+[ bonds ]
+;ai     aj      funct                 r              k
+1    2     1    0.1606    3.100E+05   ; P-F
+1    3     1    0.1606    3.100E+05   ; P-F
+1    4     1    0.1606    3.100E+05   ; P-F
+1    5     1    0.1606    3.100E+05   ; P-F
+1    6     1    0.1606    3.100E+05   ; P-F
+1    7     1    0.1606    3.100E+05   ; P-F
+
+[ angles ]
+;ai    aj     ak     funct            theta            cth
+2 1 3   1   0.0900E+03  1.165E+03 ; F-P-F
+2 1 4   1   0.0900E+03  1.165E+03 ; F-P-F
+2 1 5   1   0.0900E+03  1.165E+03 ; F-P-F
+2 1 6   1   0.0900E+03  1.165E+03 ; F-P-F
+2 1 7   1   0.0900E+03  1.165E+03 ; F-P-F
+3 1 4   1   0.0900E+03  1.165E+03 ; F-P-F
+3 1 5   1   0.0900E+03  1.165E+03 ; F-P-F
+3 1 6   1   0.0900E+03  1.165E+03 ; F-P-F
+3 1 7   1   0.0900E+03  1.165E+03 ; F-P-F
+4 1 5   1   0.0900E+03  1.165E+03 ; F-P-F
+4 1 6   1   0.0900E+03  1.165E+03 ; F-P-F
+4 1 7   1   0.0900E+03  1.165E+03 ; F-P-F
+5 1 6   1   0.0900E+03  1.165E+03 ; F-P-F
+5 1 7   1   0.0900E+03  1.165E+03 ; F-P-F
+6 1 7   1   0.0900E+03  1.165E+03 ; F-P-F
+

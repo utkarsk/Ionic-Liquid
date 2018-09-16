@@ -1,0 +1,33 @@
+; [XMIM+][OtSO4-] topology file 
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Globular, Sponge-like to Layer-like Morphological Transition in 1-n-Alkyl-3-methylimidazolium Octylsulfate Ionic Liquid Homologous Series" J. Phys. Chem. B, 2018, 122(1), 213-228
+;
+;
+;
+
+#define _FF_OPLS
+#define _FF_OPLSAA
+
+[ defaults ]
+;nbfunc  comb-rule   gen-pairs   fudgeLJ  fudgeQQ
+   1         3          yes        0.5      0.5
+
+;LOAD Force Field Parameters
+
+#include "/DIRECTORY_PATH/XMIM.itp"
+#include "/DIRECTORY_PATH/OtSO4.itp"
+
+[ system ]
+;name
+Neat_c12mim_otso4_IL
+
+[ molecules ]
+  XMI  1000
+  OtS  1000
+

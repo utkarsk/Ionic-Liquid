@@ -1,0 +1,50 @@
+; tetrafluoroborate anion [BF4]
+;
+; Ionic liquid CL&P force field (All Atom)
+;
+; Kapoor, Utkarsh
+;
+; Email: utkarsh.kapoor@okstate.edu
+;
+; Other Contributor: Jindal K. Shah
+;
+; U. Kapoor and J. K. Shah "Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions" manuscript in preparation
+;
+; Values given below can be used in GROMACS 4.5.5, 5.0.4, 5.1.5 and 2018 versions; and in comments the specific bonds, angles, dihedrals considered are shown.
+;
+
+[ atomtypes ]
+;name  at.num   mass      charge  ptype                \sigma(nm)         \eps (kJ/mol)
+BBF4          5          0.000        0.000       A    0.3580  0.397500 
+FBF4          9          0.000        0.000       A    0.3120  0.255200 
+
+[ moleculetype ]
+;name               nrexcl    
+BF4                 3         
+
+[ atoms ]
+;nr   type  resnr res   atom  cgnr         charge         mass ; qtot
+;residue 1, BF4
+1     BBF4     1     BF4   B1    1          0.960000    10.811000 ; qtot 0.228000
+2     FBF4     1     BF4   F2    2         -0.490000    18.998000 ; qtot -0.079000
+3     FBF4     1     BF4   F3    3         -0.490000    18.998000 ; qtot -0.386000
+4     FBF4     1     BF4   F4    4         -0.490000    18.998000 ; qtot -0.693000
+5     FBF4     1     BF4   F5    5         -0.490000    18.998000 ; qtot -1.000000
+
+[ bonds ]
+;ai     aj      funct                 r              k
+1    2     1    0.1394    3.2350E+05   ; B-F
+1    3     1    0.1394    3.2350E+05   ; B-F
+1    4     1    0.1394    3.2350E+05   ; B-F
+1    5     1    0.1394    3.2350E+05   ; B-F
+
+
+[ angles ]
+;ai    aj     ak     funct            theta            cth
+2 1 3   1   0.1095E+03  6.695E+02 ; F-B-F
+2 1 4   1   0.1095E+03  6.695E+02 ; F-B-F
+2 1 5   1   0.1095E+03  6.695E+02 ; F-B-F
+3 1 4   1   0.1095E+03  6.695E+02 ; F-B-F
+3 1 5   1   0.1095E+03  6.695E+02 ; F-B-F
+4 1 5   1   0.1095E+03  6.695E+02 ; F-B-F
+

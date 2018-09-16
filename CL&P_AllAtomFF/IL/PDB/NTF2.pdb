@@ -1,0 +1,30 @@
+TITLE    [NTF2]  --  bis(trifluoromethanesulfonyl)imide
+REMARK   1
+REMARK   1 Ionic liquid  CL&P force field
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions
+REMARK   5 manuscript in preparation
+
+HETATM    1  C1  NTf2    1     -12.193   4.991  -1.242  1.00  0.00           C
+HETATM    2  S2  NTf2    1     -11.340   3.449  -0.797  1.00  0.00           S  
+HETATM    3  O3  NTf2    1     -11.251   3.216   0.618  1.00  0.00           O
+HETATM    4  O4  NTf2    1     -12.096   2.302  -1.218  1.00  0.00           O
+HETATM    5  N5  NTf2    1      -9.903   3.169  -1.363  1.00  0.00           N
+HETATM    6  S6  NTf2    1      -8.932   4.351  -1.009  1.00  0.00           S
+HETATM    7  O7  NTf2    1      -9.393   5.467  -1.788  1.00  0.00           O
+HETATM    8  O8  NTf2    1      -9.253   4.751   0.333  1.00  0.00           O
+HETATM    9  C9  NTf2    1      -7.156   4.036  -1.235  1.00  0.00           C
+HETATM   10  F10 NTf2    1     -13.492   4.854  -1.027  1.00  0.00           F  
+HETATM   11  F11 NTf2    1     -11.991   5.255  -2.522  1.00  0.00           F  
+HETATM   12  F12 NTf2    1     -11.731   5.987  -0.504  1.00  0.00           F  
+HETATM   13  F13 NTf2    1      -6.479   5.154  -1.030  1.00  0.00           F  
+HETATM   14  F14 NTf2    1      -6.757   3.116  -0.372  1.00  0.00           F  
+HETATM   15  F15 NTf2    1      -6.937   3.610  -2.468  1.00  0.00           F  
+END

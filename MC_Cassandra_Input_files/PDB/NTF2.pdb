@@ -1,0 +1,34 @@
+TITLE    [NTF2]  --  bis(trifluoromethanesulfonyl)imide
+REMARK   1 Atom connectivity information is required for CASSANDRA
+REMARK   1 Ionic liquid  Zhiping Liu  force field (United Atom)
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Molecular Simulation Investigation of Pure and Mixed Gas Absorption in a Non-Ideal Binary Ionic Liquid Mixture
+REMARK   5 manuscript in preparation
+
+
+HETATM       1       C       -1.693611     3.662008     -3.800094     C       CF3
+HETATM       2       S       -2.897357     2.292306     -2.239673     S       S
+HETATM       3       O       -4.205353     2.917172     -2.205173     O       O
+HETATM       4       O       -2.870536     0.982037     -2.860137     O       O
+HETATM       5       N       -2.198252     2.311483     -0.834047     N       N
+HETATM       6       S       -2.387089     1.227110     0.285496      S       S
+HETATM       7       O       -1.787030     1.711103     1.513576      O       O
+HETATM       8       O       -1.791405     -0.046381     -0.069304    O       O
+HETATM       9       C       -4.609131     0.623221     0.962140      C       CF3
+CONECT     1    2   
+CONECT     2    5   3   4   1   
+CONECT     3    2   
+CONECT     4    2   
+CONECT     5    6   2   
+CONECT     6    9   7   8   5   
+CONECT     7    6   
+CONECT     8    6   
+CONECT     9    6   
+END

@@ -1,0 +1,20 @@
+TITLE    [BF4]  --  tetrafluoroborate
+REMARK   1
+REMARK   1 Ionic liquid  CL&P force field
+REMARK   2
+REMARK   2 Utkarsh Kapoor
+REMARK   3
+REMARK   3 Email: utkarsh.kapoor@okstate.edu
+REMARK   4
+REMARK   4 Other Contributor: Jindal K. Shah
+REMARK   5
+REMARK   5 U. Kapoor and J. K. Shah
+REMARK   5 Screening Non-ideal Binary Ionic Liquid Mixtures Using Differences in Hydrogen-Bond Acceptor Ability and Molar Volumes of the Anions
+REMARK   5 manuscript in preparation
+
+HETATM    1  B1  BF4     1      -6.422   0.532   1.146  1.00  0.00           B  
+HETATM    2  F2  BF4     1      -5.542  -0.611   1.324  1.00  0.00           F  
+HETATM    3  F3  BF4     1      -6.457   0.902  -0.260  1.00  0.00           F  
+HETATM    4  F4  BF4     1      -5.927   1.652   1.929  1.00  0.00           F  
+HETATM    5  F5  BF4     1      -7.762   0.185   1.589  1.00  0.00           F  
+END
