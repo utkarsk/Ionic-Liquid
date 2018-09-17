@@ -13,7 +13,7 @@ This repository is created by **Utkarsh Kapoor**, as part of the Ph.D. disserati
 
 ## Download ##
 
-git clone https://utkarshkapoor@bitbucket.org/utkarshkapoor/ionic-liquid.git
+git clone https://github.com/utkarsk/Ionic-Liquid.git
 
 ## Force Field Parameters Available ##
 
