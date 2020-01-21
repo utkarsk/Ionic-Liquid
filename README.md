@@ -127,7 +127,7 @@ U. Kapoor and J. K. Shah "Globular, Sponge-like to Layer-like Morphological Tran
 
 U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" [Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314](https://pubs.acs.org/doi/abs/10.1021/acs.iecr.6b03314)
 
-U. Kapoor "Ionic Liquids: The Importance of Local Structures at Micro-and Mesoscale and Descriptors to Tune Them" (https://hdl.handle.net/11244/320939)
+U. Kapoor "Ionic Liquids: The Importance of Local Structures at Micro-and Mesoscale and Descriptors to Tune Them" (https://drive.google.com/file/d/1WCsQEjGhEi6eLN-0bW4XQ7-B2sqojDOu/view?usp=sharing) or (https://hdl.handle.net/11244/320939)
 
 
 ## About ##
