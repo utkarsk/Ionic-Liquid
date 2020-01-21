@@ -118,14 +118,6 @@ All the relevant cation, anion and gas solute mentioned above, PDB files are pro
 	* a top file for CO2 + [BMIM]Cl[NTf2] mixture for using Zhiping Liu FF
 
 
-## GROMACS Tutorial ##
-
-* TO BE ADDED SOON
-
-## CASSANDRA Tutorial ##
-
-* TO BE ADDED SOON
-
 ## References ##
 U. Kapoor and J. K. Shah "Effect of Molecular Solvents of Varying Polarity on the Self-Assembly of 1-n-Dodecyl-3- methylimidazolium Octylsulfate Ionic Liquid" [J. Theor. Comput. Chem. 2018, 17, 1840004-1-1840004-26](https://www.worldscientific.com/doi/pdf/10.1142/S0219633618400047) 
 
@@ -135,6 +127,7 @@ U. Kapoor and J. K. Shah "Globular, Sponge-like to Layer-like Morphological Tran
 
 U. Kapoor and J. K. Shah "Preferential Ionic Interactions and Microscopic Structural Changes Drive Nonideality in Binary Ionic Liquid Mixtures as Revealed from Molecular Simulations" [Ind. Eng. Chem. Res., 2016, 55 (51), 13132-1314](https://pubs.acs.org/doi/abs/10.1021/acs.iecr.6b03314)
 
+U. Kapoor "Ionic Liquids: The Importance of Local Structures at Micro-and Mesoscale and Descriptors to Tune Them" (https://hdl.handle.net/11244/320939)
 
 
 ## About ##
